@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
 }
 
-.sender-column {
+.sender {
   text-align: right;
 }
 
@@ -15,10 +15,17 @@ h2 {
   font-size: 1.3em;
 }
 
-p,ul,ol,dl,address {
+p, p2, ul,ol,dl,address {
   font-size: 1.1em;
 }
 
-p, li, dd, dt, address {
+p, p2, li, dd, dt, address {
   line-height: 1.5;
 }
+
+p2{
+  display:inline-block;
+  margin-left: 1em;
+}
+
+
