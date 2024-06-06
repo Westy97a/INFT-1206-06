@@ -3,3 +3,27 @@ html {
 }
 
 /* Your CSS below here */
+
+#coolbox {
+  /* Width and height of the box */
+  width: 200px;
+  height: 200px;
+  /* Where the center of the box is located */
+  line-height: 200px;
+  /* Setting background color for box */
+  background-color: rgb(238, 99, 169);
+  /* Setting border for box*/
+  border: 1px solid #e600a1;
+  /* Setting gradient for box */
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), black);
+  /* Setting 3 box shadows */
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.3),  
+    inset 5px 5px 10px rgba(255, 255, 255, 0.3),  
+    inset -5px -5px 10px rgba(0, 0, 0, 0.5);  
+  /* All the font/text modifications */
+  text-align: center;
+  font-size: 1.125rem;
+  color: white;
+  text-shadow: 2px 2px black;
+}
