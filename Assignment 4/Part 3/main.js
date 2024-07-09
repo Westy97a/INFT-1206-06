@@ -80,7 +80,7 @@ class Ball {
 const balls = [];
 
 
-  //setting the amount of balls to 25
+  //setting the amount of balls to
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
