@@ -4,6 +4,8 @@ const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
 // Creating variables and constants needed for story
+let tempature = "";
+let weight = ""; 
 let name = 'Bob'
 const names = ["Willy the Goblin", "Big Daddy", "Father Christmas"]
 const places = ["the soup kitchen", "Disneyland", "the White House"]
@@ -19,6 +21,7 @@ randomize.addEventListener('click', result);
 // Function that creates story
 function result() {
 
+
     // Randomizes story choices
     let insertx = randomValueFromArray(names)
     let inserty = randomValueFromArray(places)
@@ -33,11 +36,18 @@ function result() {
 
   
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    weight = `${Math.round(300)} pounds`;
+    tempature = `${Math.round(94)} celsius`;
+
+  }
+
+  if(document.getElementById("us").checked) {
+    weight = `${Math.round(136.07)} kilograms`;
+    tempature = `${Math.round(94)} fahrenheit`;
+
 
   }
   
-  story.textContent = `It was ${temperature} fahrenheit outside, so ${insertx} went for a walk. When they got to ${insertx} ${inserty}, they stared in horror for a few moments, then ${insertz}. ${name} saw the whole thing, but was not surprised — ${insertx} weighs ${weight} pounds, and it was a hot day`;
+  story.textContent = `It was ${tempature} outside, so ${insertx} went for a walk. When they got to ${insertx} ${inserty}, they stared in horror for a few moments, then ${insertz}. ${name} saw the whole thing, but was not surprised — ${insertx} weighs ${weight}, and it was a hot day`;
   story.style.visibility = 'visible';
 }
